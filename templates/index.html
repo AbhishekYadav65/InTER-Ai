@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InTER-Ai - Interview AI</title>
+</head>
+<body>
+    <h1>InTER-Ai: Real-Time Interview Assistant</h1>
+    <form method="POST">
+        <label>Ask a question or simulate an interview:</label><br>
+        <input type="text" name="question" style="width: 300px;" required>
+        <button type="submit">Ask</button>
+    </form>
+    <br>
+    {% if response %}
+        <h3>AI Response:</h3>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
